@@ -1,0 +1,21 @@
+.checkout {
+  display: flex;
+  justify-content: center;
+}
+.checkout__ad {
+  margin-top: 20px;
+  display: flex;
+  font-size: 14px;
+  background-color: #fff;
+  width: 784px;
+  align-items: center;
+  justify-content: space-between;
+  align-self: center;
+  padding: 10px;
+}
+
+.checkout__ad-text {
+  font-size: 0.6rem;
+  display: flex;
+  margin: 10px;
+}
