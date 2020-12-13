@@ -12,10 +12,31 @@
   justify-content: space-between;
   align-self: center;
   padding: 10px;
+  border: 1px solid #ddd;
 }
 
 .checkout__ad-text {
-  font-size: 0.6rem;
-  display: flex;
-  margin: 10px;
+}
+
+.checkout__ad-text > span {
+  font-size: 20px;
+  color: #4682b4;
+}
+
+.checkout__ad-btn {
+  background: linear-gradient(to bottom, #f7f8fa, #e7e9ec);
+  display: block;
+  position: relative;
+  min-height: 29px;
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.6) inset;
+  border-radius: 2px;
+  background: #e7e9ec;
+  border-radius: 3px;
+  border-color: #adb1b8 #a2a6ac #8d9096;
+  border-style: solid;
+  border-width: 1px;
+  cursor: pointer;
+  display: inline-block;
+  text-align: center;
+  text-decoration: none !important;
 }

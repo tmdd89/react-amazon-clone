@@ -11,7 +11,7 @@ function Checkout() {
              <div className="checkout__ad">
                 <img className="checkout__ad-img" src="https://images-na.ssl-images-amazon.com/images/G/15/gift-certificates/consumer/2020/MAPLE/Maple_144x80_B06W5SBSL7._CB421841709_.jpg" alt="ad"/>
                 
-                <div className="checkout_ad-text">
+                <div className="checkout__ad-text">
                     <span>
                         Get a 
                         <strong>$5 credit</strong>
