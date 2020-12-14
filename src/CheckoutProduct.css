@@ -1,0 +1,51 @@
+.checkoutProduct__dep {
+  color: #565959;
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+.checkoutProduct__stock {
+  color: #007600;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.checkoutProduct__soldBy {
+  color: #565959;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.bs {
+  padding: 4px;
+  margin-right: 8px;
+  background: orange;
+  color: white;
+  font-family: helvetica;
+  border-radius: 5px 0 0 5px;
+  position: relative; /* This is important */
+}
+
+.bs:before,
+.bs:after {
+  content: "";
+  position: absolute;
+  right: -0.75em;
+  top: 0;
+  width: 0;
+  height: 0;
+  /* the trangles are made of different border widths, not the box itslef */
+  border-style: solid;
+  border-width: 18px 12px 0 0;
+  border-color: orange transparent transparent transparent;
+}
+
+.bs:after {
+  top: auto; /*reset the top placement */
+  bottom: 0;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 18px 0 0 15px;
+  border-color: transparent transparent transparent orange;
+}
