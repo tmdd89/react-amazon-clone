@@ -1,6 +1,7 @@
 import React from 'react';
 import './Checkout.css';
 import { useStateValue } from "./StateProvider";
+import CheckoutProduct from './CheckoutProduct';
 
 
 function Checkout() {
@@ -20,6 +21,27 @@ function Checkout() {
                 </div>
                 <button className="checkout__ad-btn">Learn More</button>
              </div>
+             {basket?.length === 0 ? (
+                 <div>
+                     <h2>Your Amazon cart is empty.</h2>
+                     <p>Your shopping cart lives to serve. Give it purpose – fill it with groceries, clothing, household supplies, electronics and more.</p> 
+                 </div>
+             ) : (
+                <div>
+                    <h2 className="checkout__title">
+                        Your Shopping Basket
+                    </h2>
+                    {basket.map(item => (
+                        <CheckoutProduct 
+                            item={item.id}
+                            title={item.title}
+                            image={item.image}
+                            price={item.price}
+                            rating={item.rating}
+                        />
+                    ))}
+                </div>
+             ) }
         </div>
     )
 }

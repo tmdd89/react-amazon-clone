@@ -1,21 +1,20 @@
 .checkout {
   display: flex;
   justify-content: center;
+  flex-direction: column;
 }
 .checkout__ad {
   margin-top: 20px;
+  margin-bottom: 10px;
   display: flex;
   font-size: 14px;
   background-color: #fff;
   width: 784px;
   align-items: center;
-  justify-content: space-between;
   align-self: center;
+  justify-content: space-between;
   padding: 10px;
   border: 1px solid #ddd;
-}
-
-.checkout__ad-text {
 }
 
 .checkout__ad-text > span {
@@ -25,8 +24,6 @@
 
 .checkout__ad-btn {
   background: linear-gradient(to bottom, #f7f8fa, #e7e9ec);
-  display: block;
-  position: relative;
   min-height: 29px;
   box-shadow: 0 1px 0 rgba(255, 255, 255, 0.6) inset;
   border-radius: 2px;
