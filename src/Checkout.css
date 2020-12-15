@@ -4,11 +4,15 @@
   flex-wrap: wrap;
 }
 
+.wrapper {
+  flex: 0 1 100%;
+}
+
 .checkout__basket {
   background-color: #fff;
   margin: 10px;
   padding: 20px;
-  max-width: 70%;
+  flex: 1;
 }
 
 .checkout__title {
@@ -26,10 +30,6 @@
   border-bottom: 1px solid #ddd;
 }
 
-.wrapper {
-  width: 100%;
-  flex: 0 0 100%;
-}
 .checkout__ad {
   margin-top: 20px;
   margin-bottom: 10px;
@@ -67,6 +67,5 @@
 }
 
 .checkout__right {
-  flex-shrink: 0;
-  flex-grow: 1;
+  width: 300px;
 }

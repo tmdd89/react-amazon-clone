@@ -1,4 +1,5 @@
 import React from "react";
+import CurrencyFormat from "react-currency-format";
 import "./Checkout.css";
 import { useStateValue } from "./StateProvider";
 import CheckoutProduct from "./CheckoutProduct";
@@ -29,7 +30,6 @@ function Checkout() {
           <button className="checkout__ad-btn">Learn More</button>
         </div>
       </div>
-
       {basket?.length === 0 ? (
         <div>
           <h2>Your Amazon cart is empty.</h2>
@@ -53,6 +53,7 @@ function Checkout() {
               desc={item.desc}
             />
           ))}
+          <span className="checkout__subtotal"></span>
         </div>
       )}
       {basket.length > 0 && (
