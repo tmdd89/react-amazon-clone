@@ -20,6 +20,7 @@ function Home() {
           rating={Math.floor(Math.random() * 5) + 1}
           image={faker.image.image()}
           dep={faker.commerce.department()}
+          desc={faker.commerce.productDescription()}
         />
         <Product
           id={faker.random.uuid()}
@@ -28,32 +29,7 @@ function Home() {
           rating={Math.floor(Math.random() * 5) + 1}
           image={faker.image.image()}
           dep={faker.commerce.department()}
-        />
-      </div>
-      <div className="home__row">
-        <Product
-          id={faker.random.uuid()}
-          title={faker.commerce.productName()}
-          price={faker.commerce.price()}
-          rating={Math.floor(Math.random() * 5) + 1}
-          image={faker.image.image()}
-          dep={faker.commerce.department()}
-        />
-        <Product
-          id={faker.random.uuid()}
-          title={faker.commerce.productName()}
-          price={faker.commerce.price()}
-          rating={Math.floor(Math.random() * 5) + 1}
-          image={faker.image.image()}
-          dep={faker.commerce.department()}
-        />
-        <Product
-          id={faker.random.uuid()}
-          title={faker.commerce.productName()}
-          price={faker.commerce.price()}
-          rating={Math.floor(Math.random() * 5) + 1}
-          image={faker.image.image()}
-          dep={faker.commerce.department()}
+          desc={faker.commerce.productDescription()}
         />
       </div>
       <div className="home__row">
@@ -64,6 +40,36 @@ function Home() {
           rating={Math.floor(Math.random() * 5) + 1}
           image={faker.image.image()}
           dep={faker.commerce.department()}
+          desc={faker.commerce.productDescription()}
+        />
+        <Product
+          id={faker.random.uuid()}
+          title={faker.commerce.productName()}
+          price={faker.commerce.price()}
+          rating={Math.floor(Math.random() * 5) + 1}
+          image={faker.image.image()}
+          dep={faker.commerce.department()}
+          desc={faker.commerce.productDescription()}
+        />
+        <Product
+          id={faker.random.uuid()}
+          title={faker.commerce.productName()}
+          price={faker.commerce.price()}
+          rating={Math.floor(Math.random() * 5) + 1}
+          image={faker.image.image()}
+          dep={faker.commerce.department()}
+          desc={faker.commerce.productDescription()}
+        />
+      </div>
+      <div className="home__row">
+        <Product
+          id={faker.random.uuid()}
+          title={faker.commerce.productName()}
+          price={faker.commerce.price()}
+          rating={Math.floor(Math.random() * 5) + 1}
+          image={faker.image.image()}
+          dep={faker.commerce.department()}
+          desc={faker.commerce.productDescription()}
         />
       </div>
     </div>
