@@ -25,8 +25,9 @@ function CheckoutProduct({ id, title, image, price, dep, desc }) {
                 </p>
                 <span className="checkoutProduct__stock">In Stock</span>
                 <p className="checkoutProduct__soldBy">Ships from and sold by Amazon</p>
+                <img src="https://curlydavenport.com/wp-content/uploads/2018/05/Amazon-Prime-Logo-Curly-D-Pink-Coco-300x126.png" alt="" className="checkoutProduct__prime"/>
                 <div className="checkoutProduct__select">
-                    <label for="qty">Qty:</label>
+                    <label for="qty">Qty: </label>
                     <select name="qty" id="qty">
                         <option value="1">1</option>
                         <option value="2">2</option>
