@@ -2,6 +2,7 @@ import React from "react";
 import CurrencyFormat from "react-currency-format";
 import "./Checkout.css";
 import { useStateValue } from "./StateProvider";
+import { getBasketTotal } from "./reducer";
 import CheckoutProduct from "./CheckoutProduct";
 import Subtotal from "./Subtotal";
 
@@ -53,7 +54,18 @@ function Checkout() {
               desc={item.desc}
             />
           ))}
-          <span className="checkout__subtotal"></span>
+          <p className="checkout__subtotal">
+            Subtotal ({basket.length} items):&nbsp;
+            <strong>
+              <CurrencyFormat
+                decimalScale={2}
+                value={getBasketTotal(basket)}
+                displayType={"text"}
+                thousandSeparator={true}
+                prefix={"CDN$ "}
+              />
+            </strong>
+          </p>
         </div>
       )}
       {basket.length > 0 && (
